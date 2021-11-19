@@ -120,4 +120,29 @@ public class Utilities {
         solution.setElements(elements);
         solution.setValue(value + contributions.get(bestI));
     }
+
+    static int GetOutValue(int tryOut, List<Integer> elements, Integer[][] data) {
+        int outValue = 0;
+
+        for (int i = 0; i < MDPTabu.m; i++) {
+            outValue += data[tryOut][elements.get(i)];
+        }
+
+        return outValue;
+    }
+
+    static int GetInValue(int tryOut, List<Integer> elements, Integer[][] data, int tryIn) {
+        int inValue = 0;
+
+        if (!elements.contains(tryIn)) {
+            for (int i = 0; i < MDPTabu.m; i++) {
+                int element = elements.get(i);
+                if (element != tryOut) {
+                    inValue += data[tryIn][element];
+                }
+            }
+        }
+
+        return inValue;
+    }
 }

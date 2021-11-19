@@ -31,9 +31,34 @@ public class FunMain {
 
     static ObjSolution ImproveSolution(ObjInstanceSheet sheet, ObjSolution oldSolution) {
         ObjSolution solution = new ObjSolution(oldSolution);
+        List<Integer> elements = solution.getElements();
+        int value = solution.getValue();
+        Integer[][] data = sheet.getData();
 
+        boolean improved = true;
+        while (improved) {
+            improved = false;
 
+            for (int i = 0; i < MDPTabu.m; i++) {
+                int tryOut = elements.get(i);
+                int outValue = Utilities.GetOutValue(tryOut, elements, data);
 
+                for (int tryIn = 0; tryIn < MDPTabu.n; tryIn++) {
+                    int inValue = Utilities.GetInValue(tryOut, elements, data, tryIn);
+
+                    if (inValue > outValue) {
+                        value += inValue - outValue;
+                        elements.remove(Integer.valueOf(tryOut));
+                        elements.add(tryIn);
+                        improved = true;
+                        break;
+                    }
+                }
+            }
+        }
+
+        solution.setElements(elements);
+        solution.setValue(value);
         return solution;
     }
 }

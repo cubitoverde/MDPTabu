@@ -13,14 +13,26 @@ public class MDPTabu {
         Utilities.OnEnable();
 
         for (ObjInstanceSheet instanceSheet : instanceSheets) {
+            System.out.println(" ");
             System.out.println(" " + instanceSheet.getName() + " - " + instanceSheet.getFileName());
+
             ObjSolution solution = FunMain.MdpGrasp(instanceSheet);
+
             System.out.print(" -> Solution:");
             List<Integer> elements = solution.getElements();
             for (int i = 0; i < elements.size(); i++) {
                 System.out.print(" " + elements.get(i));
             }
             System.out.println(" - Value: " + solution.getValue());
+
+            ObjSolution improvedSolution = FunMain.ImproveSolution(instanceSheet, solution);
+
+            System.out.print(" -> Improved:");
+            List<Integer> improvedElements = improvedSolution.getElements();
+            for (int i = 0; i < improvedElements.size(); i++) {
+                System.out.print(" " + improvedElements.get(i));
+            }
+            System.out.println(" - Value: " + improvedSolution.getValue());
         }
     }
 }
