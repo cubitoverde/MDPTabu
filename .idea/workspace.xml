@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8caf3bd0-04b3-4958-a20d-acb088cfd6bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/ObjSolution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/FunMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/FunMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/MDPTabu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/MDPTabu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/ObjInstanceSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/ObjInstanceSheet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/Utilities.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/FunMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+            <state relative-caret-position="438">
+              <caret line="23" column="55" lean-forward="true" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#335#344#0" expanded="true" />
@@ -151,9 +145,10 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1637344755950" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1637344973982" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -203,16 +198,23 @@
       <option name="presentableId" value="Default" />
       <updated>1637266083847</updated>
       <workItem from="1637266085456" duration="7001000" />
-      <workItem from="1637324299019" duration="5632000" />
+      <workItem from="1637324299019" duration="5885000" />
     </task>
+    <task id="LOCAL-00001" summary="Implemented MDP Grasp code">
+      <created>1637344825950</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1637344825950</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12633000" />
+    <option name="totallyTimeSpent" value="12886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21244635" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -247,6 +249,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implemented MDP Grasp code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented MDP Grasp code" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -307,8 +313,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/FunMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+        <state relative-caret-position="438">
+          <caret line="23" column="55" lean-forward="true" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#335#344#0" expanded="true" />
