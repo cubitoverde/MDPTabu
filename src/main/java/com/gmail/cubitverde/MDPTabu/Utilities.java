@@ -17,6 +17,7 @@ public class Utilities {
         MDPTabu.instanceNames = CreateInstancesList();
         MDPTabu.instanceSheets = CreateInstancesMap();
         MDPTabu.alphaGrasp = 0.5;
+        MDPTabu.runningTime = 1 * 60;
 
     }
 

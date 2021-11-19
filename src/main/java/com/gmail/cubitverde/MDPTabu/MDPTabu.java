@@ -8,31 +8,21 @@ public class MDPTabu {
     static List<String> instanceNames; // Names of instance excel sheets
     static List<ObjInstanceSheet> instanceSheets; // Data of instance excel sheets
     static double alphaGrasp; // Alpha used in GRASP method
+    static int runningTime; // Running time in seconds for the methods
 
     public static void main(String args[]) {
         Utilities.OnEnable();
 
         for (ObjInstanceSheet instanceSheet : instanceSheets) {
-            System.out.println(" ");
-            System.out.println(" " + instanceSheet.getName() + " - " + instanceSheet.getFileName());
+            Thread instanceThread = new Thread(new RunGrasp(instanceSheet));
+            instanceThread.start();
 
-            ObjSolution solution = FunMain.MdpGrasp(instanceSheet);
-
-            System.out.print(" -> Solution:");
-            List<Integer> elements = solution.getElements();
-            for (int i = 0; i < elements.size(); i++) {
-                System.out.print(" " + elements.get(i));
+            try {
+                Thread.sleep(runningTime / 2 * 1000);
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-            System.out.println(" - Value: " + solution.getValue());
 
-            ObjSolution improvedSolution = FunMain.ImproveSolution(instanceSheet, solution);
-
-            System.out.print(" -> Improved:");
-            List<Integer> improvedElements = improvedSolution.getElements();
-            for (int i = 0; i < improvedElements.size(); i++) {
-                System.out.print(" " + improvedElements.get(i));
-            }
-            System.out.println(" - Value: " + improvedSolution.getValue());
         }
     }
 }
