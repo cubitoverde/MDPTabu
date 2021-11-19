@@ -5,14 +5,22 @@ public class ObjInstanceSheet {
     private String fileName;
     private Integer[][] data;
 
+
     public ObjInstanceSheet() {
 
+    }
+
+    public ObjInstanceSheet(ObjInstanceSheet sheet) {
+        this.name = sheet.getName();
+        this.fileName = sheet.getFileName();
+        this.data = sheet.getData();
     }
 
     public ObjInstanceSheet(String fileName) {
         this.name = fileName.substring(0, fileName.length() - 5);
         this.fileName = fileName;
     }
+
 
     public String getName() {
         return name;
