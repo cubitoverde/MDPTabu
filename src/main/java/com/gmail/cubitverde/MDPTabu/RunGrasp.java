@@ -11,7 +11,8 @@ public class RunGrasp implements Runnable {
         long endTime = startTime + 1000 * MDPTabu.runningTime;
 
         System.out.println(" ");
-        System.out.println(" Starting GRASP for sheet: " + instanceSheet.getName());
+        System.out.println("Starting GRASP for sheet: " + instanceSheet.getName());
+        System.out.println("Running time (seconds): " + MDPTabu.runningTime + " - Alpha: " + MDPTabu.alphaGrasp);
 
         while (System.currentTimeMillis() < endTime) {
             ObjSolution solution = FunMain.MdpGrasp(instanceSheet);
@@ -23,7 +24,7 @@ public class RunGrasp implements Runnable {
         }
 
         System.out.println(" ");
-        System.out.println(" " + instanceSheet.getName() + " - " + instanceSheet.getFileName());
+        System.out.println("" + instanceSheet.getName() + " - " + instanceSheet.getFileName());
         System.out.print(" -> Solution:");
         List<Integer> elements = bestSolution.getElements();
         for (int i = 0; i < elements.size(); i++) {
