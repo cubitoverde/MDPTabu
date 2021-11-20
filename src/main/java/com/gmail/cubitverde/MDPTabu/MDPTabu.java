@@ -18,7 +18,7 @@ public class MDPTabu {
             instanceThread.start();
 
             try {
-                Thread.sleep(runningTime / 2 * 1000 + 1000);
+                Thread.sleep(runningTime / 4 * 1000 + 1000);
             } catch (Exception e) {
                 e.printStackTrace();
             }
