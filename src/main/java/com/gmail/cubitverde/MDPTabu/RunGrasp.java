@@ -9,6 +9,7 @@ public class RunGrasp implements Runnable {
         ObjSolution bestSolution = new ObjSolution(instanceSheet.getFileName());
         long startTime = System.currentTimeMillis();
         long endTime = startTime + 1000 * MDPTabu.runningTime;
+        int iterations = 0;
 
         System.out.println(" ");
         System.out.println("Starting GRASP for sheet: " + instanceSheet.getName());
@@ -21,10 +22,11 @@ public class RunGrasp implements Runnable {
             if (improvedSolution.getValue() > bestSolution.getValue()) {
                 bestSolution = improvedSolution;
             }
+            iterations++;
         }
 
         System.out.println(" ");
-        System.out.println("" + instanceSheet.getName() + " - " + instanceSheet.getFileName());
+        System.out.println("" + instanceSheet.getName() + " - " + instanceSheet.getFileName() + " - Iterations: " + iterations);
         System.out.print(" -> Solution:");
         List<Integer> elements = bestSolution.getElements();
         for (int i = 0; i < elements.size(); i++) {

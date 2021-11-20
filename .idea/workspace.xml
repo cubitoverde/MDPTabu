@@ -19,17 +19,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/MDPTabu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+            <state relative-caret-position="460">
+              <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/RunGrasp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="561">
+              <caret line="28" column="128" lean-forward="true" selection-start-line="28" selection-start-column="128" selection-end-line="28" selection-end-column="128" />
             </state>
           </provider>
         </entry>
@@ -37,7 +37,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/FunMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1065">
+            <state relative-caret-position="1311">
               <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -46,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/Utilities.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+            <state relative-caret-position="-1070">
+              <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,8 +79,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/FunMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/RunTimer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/MDPTabu.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/RunGrasp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/Utilities.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/RunGrasp.java" />
       </list>
     </option>
   </component>
@@ -210,7 +210,8 @@
       <workItem from="1637266085456" duration="7001000" />
       <workItem from="1637324299019" duration="10828000" />
       <workItem from="1637360647838" duration="2034000" />
-      <workItem from="1637435935031" duration="2246000" />
+      <workItem from="1637435935031" duration="4083000" />
+      <workItem from="1637446430385" duration="223000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented MDP Grasp code">
       <created>1637344825950</created>
@@ -240,17 +241,24 @@
       <option name="project" value="LOCAL" />
       <updated>1637361217617</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Final version used for GRASP data">
+      <created>1637438300131</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1637438300146</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22109000" />
+    <option name="totallyTimeSpent" value="24169000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19670959" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19957082" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -259,7 +267,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32769832" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.46033812" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -288,7 +296,8 @@
     <MESSAGE value="Implemented MDP Grasp code" />
     <MESSAGE value="Implemented MDP Grasp solution improvement code" />
     <MESSAGE value="Implemented MDP Grasp time limit runnable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented MDP Grasp time limit runnable" />
+    <MESSAGE value="Final version used for GRASP data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final version used for GRASP data" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -330,15 +339,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/MDPTabu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        <state relative-caret-position="460">
+          <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/FunMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
+        <state relative-caret-position="1311">
           <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/Utilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1070">
+          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -347,18 +366,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/RunGrasp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/Utilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="561">
+          <caret line="28" column="128" lean-forward="true" selection-start-line="28" selection-start-column="128" selection-end-line="28" selection-end-column="128" />
         </state>
       </provider>
     </entry>
