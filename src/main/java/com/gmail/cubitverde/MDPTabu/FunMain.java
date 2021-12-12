@@ -22,7 +22,7 @@ public class FunMain {
             elements = solution.getElements();
             Utilities.UpdateContributions(contributions, sheet, elements.get(j));
             for (int k = 0; k < elements.size(); k++) {
-                contributions.put(k, 0);
+                contributions.put(elements.get(k), 0);
             }
         }
 

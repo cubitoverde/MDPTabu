@@ -13,16 +13,22 @@ public class MDPTabu {
     public static void main(String args[]) {
         Utilities.OnEnable();
 
+        int i = 0;
         for (ObjInstanceSheet instanceSheet : instanceSheets) {
             Thread instanceThread = new Thread(new RunGrasp(instanceSheet));
             instanceThread.start();
 
             try {
-                Thread.sleep(runningTime / 4 * 1000 + 1000);
+                if (i == 4) {
+                    Thread.sleep(runningTime * 1000 + (i + 1) * 1000);
+                } else {
+                    Thread.sleep(1000);
+                }
             } catch (Exception e) {
                 e.printStackTrace();
             }
 
+            i++;
         }
     }
 }
