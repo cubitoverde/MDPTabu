@@ -19,8 +19,8 @@ public class MDPTabu {
             instanceThread.start();
 
             try {
-                if (i == 4) {
-                    Thread.sleep(runningTime * 1000 + (i + 1) * 1000);
+                if (i == 4 - 1) {
+                    Thread.sleep(runningTime * 1000 + (i + 2) * 1000);
                 } else {
                     Thread.sleep(1000);
                 }
