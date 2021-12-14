@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8caf3bd0-04b3-4958-a20d-acb088cfd6bb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/RunTabu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/FunMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/FunMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/MDPTabu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/MDPTabu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/Utilities.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -15,11 +18,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/MDPTabu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="22" column="70" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
+            <state relative-caret-position="285">
+              <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/Utilities.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -27,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/RunGrasp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+            <state relative-caret-position="563">
+              <caret line="34" column="67" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
               <folding>
                 <element signature="e#1521#1522#0" expanded="true" />
                 <element signature="e#1590#1591#0" expanded="true" />
@@ -38,25 +53,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/FunMain.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/RunTabu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
+            <state relative-caret-position="511">
+              <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1708#1709#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/Utilities.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/FunMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="387">
+              <caret line="107" column="13" lean-forward="true" selection-start-line="107" selection-start-column="13" selection-end-line="107" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -80,10 +92,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/ObjInstanceSheet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/ObjSolution.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/RunTimer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/RunGrasp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/FunMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/MDPTabu.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/Utilities.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/RunGrasp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/MDPTabu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/RunTabu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/FunMain.java" />
       </list>
     </option>
   </component>
@@ -107,6 +120,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,14 +166,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1639337226856" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1639409148664" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="Errors" />
@@ -244,6 +257,9 @@
       <workItem from="1639337595603" duration="553000" />
       <workItem from="1639343459016" duration="2249000" />
       <workItem from="1639406743245" duration="74000" />
+      <workItem from="1639406822114" duration="1941000" />
+      <workItem from="1639428436970" duration="358000" />
+      <workItem from="1639478086070" duration="1427000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented MDP Grasp code">
       <created>1637344825950</created>
@@ -308,17 +324,24 @@
       <option name="project" value="LOCAL" />
       <updated>1639344355176</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added MDP Paper Data text file.">
+      <created>1639406843522</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1639406843522</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48745000" />
+    <option name="totallyTimeSpent" value="52471000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1440" height="877" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22603719" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21316166" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -359,7 +382,8 @@
     <MESSAGE value="Final version used for GRASP data" />
     <MESSAGE value="Final version used for GRASP data, fixed a problem allowing for duplicate elements to be in a solution." />
     <MESSAGE value="Final version used for GRASP data, fixed a bug allowing for duplicate elements to be in a solution." />
-    <option name="LAST_COMMIT_MESSAGE" value="Final version used for GRASP data, fixed a bug allowing for duplicate elements to be in a solution." />
+    <MESSAGE value="Added MDP Paper Data text file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added MDP Paper Data text file." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -395,17 +419,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/MDPTabu.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/FunMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" column="70" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
+        <state relative-caret-position="387">
+          <caret line="107" column="13" lean-forward="true" selection-start-line="107" selection-start-column="13" selection-end-line="107" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/RunGrasp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        <state relative-caret-position="563">
+          <caret line="34" column="67" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
           <folding>
             <element signature="e#1521#1522#0" expanded="true" />
             <element signature="e#1590#1591#0" expanded="true" />
@@ -413,23 +437,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/FunMain.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/Utilities.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
+        <state relative-caret-position="280">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/Utilities.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/RunTabu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        <state relative-caret-position="511">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1708#1709#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/cubitverde/MDPTabu/MDPTabu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
         </state>
       </provider>
     </entry>

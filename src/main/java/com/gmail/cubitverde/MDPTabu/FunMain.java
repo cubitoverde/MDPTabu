@@ -1,9 +1,6 @@
 package com.gmail.cubitverde.MDPTabu;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class FunMain {
     static ObjSolution MdpGrasp(ObjInstanceSheet sheet) {
@@ -54,6 +51,60 @@ public class FunMain {
                         break;
                     }
                 }
+            }
+        }
+
+        solution.setElements(elements);
+        solution.setValue(value);
+        return solution;
+    }
+
+    static ObjSolution TabuMethod(ObjInstanceSheet sheet, ObjSolution oldSolution) {
+        ObjSolution solution = new ObjSolution(oldSolution);
+        List<Integer> elements = solution.getElements();
+        int value = solution.getValue();
+        Integer[][] data = sheet.getData();
+        LinkedList<Integer> tabuList = new LinkedList<Integer>();
+
+        for (int i = 0; i < MDPTabu.m; i++) {
+            boolean improved = false;
+            int tryOut = elements.get(i);
+            int outValue = Utilities.GetOutValue(tryOut, elements, data);
+
+            int bestInValue = -1;
+            int bestI = -1;
+            for (int tryIn = 0; tryIn < MDPTabu.n; tryIn++) {
+                if (tabuList.contains(tryIn)) {
+                    continue;
+                }
+
+                int inValue = Utilities.GetInValue(tryOut, elements, data, tryIn);
+                if (inValue > bestInValue) {
+                    bestInValue = inValue;
+                    bestI = tryIn;
+                }
+
+                if (inValue > outValue) {
+                    value += inValue - outValue;
+                    elements.remove(Integer.valueOf(tryOut));
+                    if (tabuList.size() == MDPTabu.tabuTenure) {
+                        tabuList.removeFirst();
+                    }
+                    tabuList.addLast(tryOut);
+                    elements.add(tryIn);
+                    improved = true;
+                    break;
+                }
+            }
+
+            if (!improved) {
+                value += bestInValue - outValue;
+                elements.remove(Integer.valueOf(tryOut));
+                if (tabuList.size() == MDPTabu.tabuTenure) {
+                    tabuList.removeFirst();
+                }
+                tabuList.addLast(tryOut);
+                elements.add(bestI);
             }
         }
 

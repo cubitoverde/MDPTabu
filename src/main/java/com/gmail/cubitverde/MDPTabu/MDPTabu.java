@@ -9,14 +9,22 @@ public class MDPTabu {
     static List<ObjInstanceSheet> instanceSheets; // Data of instance excel sheets
     static double alphaGrasp; // Alpha used in GRASP method
     static int runningTime; // Running time in seconds for the methods
+    static int tabuTenure; // Tenure used in Tabu method
+    static boolean runGrasp = false; // True to run GRASP, false to run Tabu
 
     public static void main(String args[]) {
         Utilities.OnEnable();
 
         int i = 0;
         for (ObjInstanceSheet instanceSheet : instanceSheets) {
-            Thread instanceThread = new Thread(new RunGrasp(instanceSheet));
-            instanceThread.start();
+
+            if (runGrasp) {
+                Thread instanceThreadGrasp = new Thread(new RunGrasp(instanceSheet));
+                instanceThreadGrasp.start();
+            } else {
+                Thread instanceThreadTabu = new Thread(new RunTabu(instanceSheet));
+                instanceThreadTabu.start();
+            }
 
             try {
                 if (i == 4 - 1) {
