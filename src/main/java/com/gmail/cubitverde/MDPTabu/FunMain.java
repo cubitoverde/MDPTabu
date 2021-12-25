@@ -5,7 +5,7 @@ import java.util.*;
 public class FunMain {
     static ObjSolution MdpGrasp(ObjInstanceSheet sheet) {
         ObjSolution solution = new ObjSolution(sheet.getFileName());
-        List<Integer> elements = new ArrayList<Integer>();
+        LinkedList<Integer> elements = new LinkedList<Integer>();
 
         int bestI = (int) (Math.random() * MDPTabu.n);
         elements.add(bestI);
@@ -28,7 +28,7 @@ public class FunMain {
 
     static ObjSolution ImproveSolution(ObjInstanceSheet sheet, ObjSolution oldSolution) {
         ObjSolution solution = new ObjSolution(oldSolution);
-        List<Integer> elements = solution.getElements();
+        LinkedList<Integer> elements = solution.getElements();
         int value = solution.getValue();
         Integer[][] data = sheet.getData();
 
@@ -46,7 +46,7 @@ public class FunMain {
                     if (inValue > outValue) {
                         value += inValue - outValue;
                         elements.remove(Integer.valueOf(tryOut));
-                        elements.add(tryIn);
+                        elements.add(i, tryIn);
                         improved = true;
                         break;
                     }
@@ -61,7 +61,7 @@ public class FunMain {
 
     static ObjSolution TabuMethod(ObjInstanceSheet sheet, ObjSolution oldSolution) {
         ObjSolution solution = new ObjSolution(oldSolution);
-        List<Integer> elements = solution.getElements();
+        LinkedList<Integer> elements = solution.getElements();
         int value = solution.getValue();
         Integer[][] data = sheet.getData();
         LinkedList<Integer> tabuList = new LinkedList<Integer>();
@@ -91,7 +91,7 @@ public class FunMain {
                         tabuList.removeFirst();
                     }
                     tabuList.addLast(tryOut);
-                    elements.add(tryIn);
+                    elements.add(i, tryIn);
                     improved = true;
                     break;
                 }
@@ -104,7 +104,7 @@ public class FunMain {
                     tabuList.removeFirst();
                 }
                 tabuList.addLast(tryOut);
-                elements.add(bestI);
+                elements.add(i, bestI);
             }
         }
 

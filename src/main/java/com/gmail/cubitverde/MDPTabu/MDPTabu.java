@@ -10,7 +10,7 @@ public class MDPTabu {
     static double alphaGrasp; // Alpha used in GRASP method
     static int runningTime; // Running time in seconds for the methods
     static int tabuTenure; // Tenure used in Tabu method
-    static boolean runGrasp = false; // True to run GRASP, false to run Tabu
+    static int runWhichMethod = 2; // Set to: 1 to run GRASP, 2 to run Tabu, 3 to run ?
 
     public static void main(String args[]) {
         Utilities.OnEnable();
@@ -18,12 +18,18 @@ public class MDPTabu {
         int i = 0;
         for (ObjInstanceSheet instanceSheet : instanceSheets) {
 
-            if (runGrasp) {
-                Thread instanceThreadGrasp = new Thread(new RunGrasp(instanceSheet));
-                instanceThreadGrasp.start();
-            } else {
-                Thread instanceThreadTabu = new Thread(new RunTabu(instanceSheet));
-                instanceThreadTabu.start();
+            switch (runWhichMethod) {
+                case 1:
+                    Thread instanceThreadGrasp = new Thread(new RunGrasp(instanceSheet));
+                    instanceThreadGrasp.start();
+                    break;
+                case 2:
+                    Thread instanceThreadTabu = new Thread(new RunTabu(instanceSheet));
+                    instanceThreadTabu.start();
+                    break;
+                case 3:
+
+                    break;
             }
 
             try {

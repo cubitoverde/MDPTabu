@@ -12,7 +12,7 @@ public class RunTabu implements Runnable {
 
         System.out.println(" ");
         System.out.println("Starting Tabu for sheet: " + instanceSheet.getName());
-        System.out.println("Running time (seconds): " + MDPTabu.runningTime + " - Alpha: " + MDPTabu.alphaGrasp + " - Tenure: " + MDPTabu.tabuTenure);
+        System.out.println("Running time (seconds): " + MDPTabu.runningTime + " - Tenure: " + MDPTabu.tabuTenure);
 
         ObjSolution bestSolution = FunMain.ImproveSolution(instanceSheet, FunMain.MdpGrasp(instanceSheet));
         ObjSolution lastSolution = new ObjSolution(bestSolution);

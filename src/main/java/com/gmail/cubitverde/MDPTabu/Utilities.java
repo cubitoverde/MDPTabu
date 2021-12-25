@@ -7,6 +7,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -93,11 +94,11 @@ public class Utilities {
     }
 
     static void AddNewElement(Map<Integer, Integer> contributions, ObjSolution solution) {
-        List<Integer> elements = solution.getElements();
+        LinkedList<Integer> elements = solution.getElements();
         int value = solution.getValue();
 
         int max = 0;
-        int min = 999999;
+        int min = 9999999;
 
         for (int i = 0; i < MDPTabu.n; i++) {
             int contributionI = contributions.get(i);
@@ -112,7 +113,7 @@ public class Utilities {
         double threshold = min + MDPTabu.alphaGrasp * (max - min);
         List<Integer> goodElements = new ArrayList<Integer>();
         for (int i = 0; i < MDPTabu.n; i++) {
-            if (contributions.get(i) > threshold) {
+            if (contributions.get(i) >= threshold) {
                 goodElements.add(i);
             }
         }

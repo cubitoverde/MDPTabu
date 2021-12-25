@@ -1,10 +1,10 @@
 package com.gmail.cubitverde.MDPTabu;
 
-import java.util.List;
+import java.util.LinkedList;
 
 public class ObjSolution {
     private String instance;
-    private List<Integer> elements;
+    private LinkedList<Integer> elements;
     private int value;
 
 
@@ -39,11 +39,11 @@ public class ObjSolution {
         this.instance = instance;
     }
 
-    public List<Integer> getElements() {
+    public LinkedList<Integer> getElements() {
         return elements;
     }
 
-    public void setElements(List<Integer> elements) {
+    public void setElements(LinkedList<Integer> elements) {
         this.elements = elements;
     }
 }
