@@ -10,7 +10,8 @@ public class MDPTabu {
     static double alphaGrasp; // Alpha used in GRASP method
     static int runningTime; // Running time in seconds for the methods
     static int tabuTenure; // Tenure used in Tabu method
-    static int runWhichMethod = 2; // Set to: 1 to run GRASP, 2 to run Tabu, 3 to run ?
+    static int runWhichMethod = 1; // Set to: 1 to run GRASP, 2 to run Tabu
+    static boolean saveImprovement = false; // Set to true to save improvements to plot in Matlab
 
     public static void main(String args[]) {
         Utilities.OnEnable();
@@ -26,9 +27,6 @@ public class MDPTabu {
                 case 2:
                     Thread instanceThreadTabu = new Thread(new RunTabu(instanceSheet));
                     instanceThreadTabu.start();
-                    break;
-                case 3:
-
                     break;
             }
 
